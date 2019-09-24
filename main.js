@@ -1,4 +1,4 @@
-import 'strict';
+
 const SHA256 = require('crypto-js/sha256')
 
 class Block{
@@ -21,7 +21,7 @@ calculateHash(){
 
 class BlockChain{
     constructor(){
-        this.chain = [];
+        this.chain = [this.createGenesisBlock()];
 
     }
 
@@ -40,3 +40,10 @@ class BlockChain{
     }
 
 }
+
+
+let coin = new BlockChain();
+coin.addBlock(new Block(1, "09/23/19", {amount: 100}));
+coin.addBlock(new Block(2, "09/22/19", {amount: 50}));
+
+console.log(JSON.stringify(coin,null,4))
