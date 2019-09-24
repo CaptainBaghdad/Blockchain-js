@@ -1,0 +1,22 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "High level blockchain to get the basics of what blockchain technology is with Node js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaptainBaghdad/Blockchain-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaptainBaghdad/Blockchain-js/issues"
+  },
+  "homepage": "https://github.com/CaptainBaghdad/Blockchain-js#readme",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  }
+}
